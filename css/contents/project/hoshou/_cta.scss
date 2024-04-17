@@ -1,0 +1,77 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.cta__wrap {
+    width: 100%;
+    padding: prem(52) prem(61) prem(23);
+    background-color: #4E9DD3;
+    border-radius: prem(10);
+
+    @include mq(md) {
+        padding: prem(20);
+    }
+}
+
+.cta__text {
+    padding: prem(20) 0;
+    font-family: $font-family-base;
+    font-weight: $regular;
+    font-size: prem(14);
+
+    span {
+        display: inline-block;
+    }
+}
+
+.cta__tel {
+    margin-top: prem(25);
+    font-family: $font-family-in;
+    font-weight: $bold;
+    font-size: prem(38);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: prem(10);
+
+    @include mq(md) {
+        margin-top: prem(10);
+        font-size: prem(24);
+        gap: prem(7);
+    }
+}
+
+.cta__tel-icon {
+    img {
+        height: auto;
+    }
+    @include mq(md) {
+        width: prem(32);
+    }
+}
+
+.cta__time-text {
+    margin-top: prem(12);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: prem(310);
+    padding: prem(7) 0 prem(9);;
+    color: #fff;
+    font-size: prem(16);
+    font-weight: $regular;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: prem(100);
+
+    @include mq(md) {
+        margin-top: prem(10);
+        padding: prem(5);
+        font-size: prem(12);
+    }
+    
+
+    span {
+        font-family: $font-family-in;
+    }
+}

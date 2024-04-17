@@ -1,0 +1,24 @@
+@import '../foundation/functions';
+@import '../foundation/mixin';
+@import '../foundation/variables';
+
+
+.section-title__lv3 {
+    padding-bottom: prem(7);
+    font-size: prem(16);
+    font-weight: $bold;
+    font-family: $font-family-base;
+    color: #222222;
+    border-bottom: 2px solid #0374D2;
+
+    span {
+        display: inline-block;
+    }
+}
+
+.section-title__lv3.section-title__lv3-blue {
+    span {
+        display: inline;
+        color: #0374D2;
+    }
+}

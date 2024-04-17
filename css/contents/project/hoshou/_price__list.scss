@@ -1,0 +1,51 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+.price__list-wrap {
+    margin-top: prem(20);
+    border-right: 1px solid #0374D2;
+    border-bottom: 1px solid #0374D2;
+    border-left: 1px solid #0374D2;
+
+}
+
+.price__list {
+    border-top: 1px solid #0374D2;
+    display: flex;
+    
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.price-list__term {
+    width: prem(430);
+    padding: prem(13.5);
+    font-family: $font-family-base;
+    font-weight: $bold;
+    font-size: prem(14);
+    background-color: #EDF4FA;
+    display: flex;
+    align-items: center;
+
+    @include mq(md) {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.price-list__description {
+    padding: prem(16);
+    font-family: $font-family-in;
+    font-weight: $regular;
+    text-align: center;
+    border-left: 1px solid #0374D2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+
+    @include mq(md) {
+        border-left: none;
+    }
+}

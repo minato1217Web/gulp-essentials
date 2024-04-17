@@ -1,0 +1,14 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.payment-loan__list {
+    padding-left: prem(23);
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #222;
+}
+
+.payment-loan-list__item {
+    list-style: disc;
+}

@@ -1,0 +1,9 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.choose__btn-wrap {
+    margin-top: prem(40);
+    display: flex;
+    justify-content: center;
+}

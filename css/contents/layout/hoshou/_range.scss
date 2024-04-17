@@ -1,0 +1,10 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+.layout-range {
+    margin-top: prem(80);
+
+    @include mq(md) {
+        margin-top: prem(40);
+    }
+}

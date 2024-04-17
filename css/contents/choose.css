@@ -1,0 +1,1445 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+@media (max-width: 1040px) {
+  html {
+    font-size: calc(16 / 1040 * 100vw);
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: calc(16 / 375 * 100vw);
+  }
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 767px) {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+/* ある時からbr消去 
+----------------------------------------------- */
+@media screen and (max-width: 399px) {
+  .sm-remove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-remove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .lg-remove {
+    display: none;
+  }
+}
+
+/* ある時からbr追加
+----------------------------------------------- */
+.sm-add {
+  display: none;
+}
+@media screen and (max-width: 399px) {
+  .sm-add {
+    display: block;
+  }
+}
+
+.md-add {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .md-add {
+    display: block;
+  }
+}
+
+.lg-add {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .lg-add {
+    display: block;
+  }
+}
+
+.br-add {
+  display: inline-block;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-choose {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-choose {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-type {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-type {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-question {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-question {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-check {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-check {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-heating {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-heating {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-ecojozu {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-ecojozu {
+    margin-top: 2.5rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.section__title-wrap {
+  width: 100%;
+  background-color: #F2F9FF;
+  padding: 0.9375rem;
+  border-bottom: 2px solid #0374D2;
+  display: flex;
+  gap: 0.75rem;
+}
+@media screen and (max-width: 767px) {
+  .section__title-wrap {
+    gap: 0.5rem;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #0374D2;
+}
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 1.125rem;
+  }
+}
+.section-title span {
+  display: inline-block;
+}
+
+.section__title-no {
+  margin-top: 0.1875rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #FFA800;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  border-radius: 0.3125rem;
+  flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .section__title-no {
+    width: 1.375rem;
+    height: 1.375rem;
+    font-size: 0.875rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-big {
+  position: relative;
+  width: 27.5rem;
+  height: 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  background-color: #0374D2;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 4px 0px 0px #0062B3;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .btn-big {
+    width: 18.75rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+  }
+}
+.btn-big img {
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 0.75rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-small {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 0.625rem 0;
+  background-color: #0374D2;
+  border-radius: 0.125rem;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.btn-small picture {
+  width: 0.5625rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  right: 0.4375rem;
+  transform: translateY(-50%);
+}
+.btn-small picture img {
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-small.btn-small__tank {
+    font-size: 0.75rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-maker {
+  position: relative;
+  width: 100%;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  border-radius: 0.3125rem;
+  background: #50abe6;
+  box-shadow: 0 0.3125rem 0 #0478c4;
+  transition: box-shadow ease 0.3s, transform ease 0.3s;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .btn-maker {
+    height: 2.5rem;
+    font-size: 0.75rem;
+  }
+}
+.btn-maker:hover {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+  box-shadow: none;
+  transform: translateY(5px);
+  transition: box-shadow ease 0.3s, transform ease 0.3s;
+}
+.btn-maker img {
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 0.75rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.section-title__lv3 {
+  padding-bottom: 0.4375rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+  border-bottom: 2px solid #0374D2;
+}
+.section-title__lv3 span {
+  display: inline-block;
+}
+
+.section-title__lv3.section-title__lv3-blue span {
+  display: inline;
+  color: #0374D2;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-cta {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #182166;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC300;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .btn-cta {
+    font-size: 1rem;
+    height: 3.75rem;
+  }
+}
+
+.btn-cta:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  top: 2px;
+}
+
+.btn-cta::before {
+  width: 200%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffc300, #ffdc6c 38%, #fff3ce 57%, #ffe07d 74%, #ffc300);
+  z-index: 0;
+  animation: bggradient 2.5s ease infinite;
+  transition: all 0.2s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.25rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 0.4375rem solid rgba(0, 0, 0, 0);
+  border-bottom: 0.4375rem solid rgba(0, 0, 0, 0);
+  border-left: 0.625rem solid #192166;
+  border-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .btn-cta::after {
+    right: 0.625rem;
+  }
+}
+
+.btn-cta span {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  display: inline;
+}
+
+@keyframes bggradient {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.container {
+  max-width: 65rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 14.125rem 1.25rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3.75rem;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 37.5rem;
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.main {
+  max-width: 45rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    flex-direction: column;
+    gap: 0;
+    max-width: 37.5rem;
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.sidebar {
+  width: 13.75rem;
+  background-color: #fdfdfd;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.step__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+@media screen and (max-width: 767px) {
+  .step__title {
+    font-size: 1.25rem;
+  }
+}
+.step__title span {
+  color: #0374D2;
+}
+
+.step__text {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+@media screen and (max-width: 767px) {
+  .step__text {
+    font-size: 0.75rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.step__list {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.25rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .step__list {
+    grid-template-columns: repeat(2, calc((100% - 0.625rem) / 2));
+  }
+}
+
+.step-list__item a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-list__item-icon-wrap {
+  height: 1.75rem;
+  display: block;
+  background-image: linear-gradient(-45deg, #FFB526 25%, #FFA500 25%, #FFA500 50%, #FFB526 50%, #FFB526 75%, #FFA500 75%, #FFA500);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.step-list__item-icon {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  display: inline-block;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-list__item-icon img {
+  height: 100%;
+}
+
+.step-list__item-text-wrap {
+  padding: 0.75rem 1rem 1.25rem 1.25rem;
+  background-color: #FFF3DB;
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .step-list__item-text-wrap {
+    padding: 0.75rem 0.625rem 0.75rem 1rem;
+  }
+}
+
+.step-list__item-no {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #FFA800;
+  text-transform: uppercase;
+}
+
+.step-list__item-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.step-list__item-text span {
+  display: inline-block;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.choose__btn-wrap {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.type {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.type__text {
+  margin-top: 1.25rem;
+}
+
+.type-accordion__inner {
+  margin: auto;
+  width: 100%;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.type-accordion {
+  margin-top: 2.5rem;
+}
+
+.type-accordion-list__item + .type-accordion-list__item {
+  margin-top: 2.5rem;
+}
+
+.type-accordion-list__item-question {
+  padding-bottom: 0.4375rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-bottom: 2px solid #0374D2;
+  cursor: pointer;
+}
+@media screen and (max-width: 767px) {
+  .type-accordion-list__item-question {
+    font-size: 0.875rem;
+  }
+}
+.type-accordion-list__item-question picture {
+  margin-right: 0.3125rem;
+  display: inline-block;
+  transform: rotate(-90deg);
+  transform-origin: center;
+  transition: 0.4s;
+}
+.type-accordion-list__item-question.is-open picture {
+  transition: 0.4s;
+  transform: rotate(0deg);
+}
+
+.type-accordion-list__item-answer {
+  display: none;
+}
+
+.type-accordion-list__item-answer-text {
+  margin-top: 1.25rem;
+}
+
+.type-accordion-list__item-answer-list {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.25rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .type-accordion-list__item-answer-list {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.type-accordion-list__item-answer-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.type-accordion-list__item-answer-list-item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0374D2;
+}
+
+.type-accordion-list__item-answer-list-item-img {
+  width: 14.5625rem;
+  margin-top: 0.1875rem;
+  aspect-ratio: 233/250;
+}
+@media screen and (max-width: 767px) {
+  .type-accordion-list__item-answer-list-item-img {
+    width: 100%;
+  }
+}
+.type-accordion-list__item-answer-list-item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.type-accordion-list__item-answer-list-item-content {
+  flex: 1;
+}
+
+.type-accordion-list__item-answer-list-item-text {
+  padding: 0.9375rem 0;
+  font-size: 0.875rem;
+}
+.type-accordion-list__item-answer-list-item-text span {
+  font-weight: 700;
+}
+
+.type-accordion-list__item-answer-list-item-btn-wrap {
+  margin-top: auto;
+}
+
+.type-accordion-list__item-answer-bottom-wrap {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 0.625rem) / 2));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .type-accordion-list__item-answer-bottom-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.question__text {
+  padding: 1.25rem 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.question__wrap {
+  padding: 1.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 3.1875rem;
+}
+@media screen and (max-width: 767px) {
+  .question__wrap {
+    flex-direction: column;
+  }
+}
+
+.question__img {
+  width: 16.0625rem;
+  flex-shrink: 0;
+  aspect-ratio: 257/260;
+}
+.question__img img {
+  height: 100%;
+}
+
+.question__content {
+  width: 100%;
+  border: 1px solid #0374D2;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+/* テーブル
+----------------------------------------------- */
+.question__content__list {
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .question__content__list {
+    font-size: 0.75rem;
+  }
+}
+
+.question__content__list + .question__content__list {
+  border-top: 1px solid #0374D2;
+}
+
+.question__content__term {
+  width: 24%;
+  padding: 0.84375rem;
+  color: #0374D2;
+  background: #EDF4FA;
+  display: grid;
+  place-items: center;
+}
+
+.question__content__description {
+  width: 76%;
+  font-weight: 400;
+  border-left: 1px solid #0374D2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.question__content__description span {
+  color: #0374D2;
+  font-weight: 700;
+}
+
+/* リスト
+----------------------------------------------- */
+.question__list {
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.875rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .question__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.question-list__item {
+  padding-bottom: 0.375rem;
+  background: linear-gradient(180deg, #F8EFE0 53.57%, #FFF 100%);
+  text-align: center;
+}
+
+.question-list__item-title {
+  padding: 0.1875rem 0;
+  background-color: #2482CD;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+}
+
+.question-list__item-img {
+  width: 9.375rem;
+  margin: 0 auto;
+  padding: 0.5rem 0 0.5625rem 0;
+  aspect-ratio: 150/71;
+}
+.question-list__item-img img {
+  height: 100%;
+}
+
+.question-list__item-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.youtube__wrap {
+  padding: 1.875rem;
+  background: linear-gradient(180deg, #F3F9FE 0%, #FFF 100%);
+  text-align: center;
+}
+
+.youtube__text {
+  margin: 0 auto;
+  padding: 0.3125rem 0 0.375rem 0;
+  max-width: 32.5rem;
+  height: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 6.25rem;
+  background-image: linear-gradient(-45deg, #FFB526 25%, #FFA500 25%, #FFA500 50%, #FFB526 50%, #FFB526 75%, #FFA500 75%, #FFA500);
+  background-size: 20px 20px;
+  position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .youtube__text {
+    height: 1.875rem;
+    font-size: 0.75rem;
+  }
+}
+.youtube__text::before {
+  content: "";
+  width: 0.75rem;
+  height: 0.6875rem;
+  position: absolute;
+  background-color: #FFA800;
+  bottom: -0.625rem;
+  -webkit-clip-path: polygon(0 0, 50% 100%, 100% 0);
+          clip-path: polygon(0 0, 50% 100%, 100% 0);
+  left: 49%;
+}
+
+.youtube {
+  max-width: 32.5rem;
+  height: 18.25rem;
+  margin: 1.25rem auto 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+iframe {
+  aspect-ratio: 16/9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.check__text {
+  padding: 1.25rem 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.check__wrap + .check__wrap {
+  margin-top: 2.5rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.check__list {
+  padding: 1.25rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.check-list__item {
+  padding: 1.25rem;
+  border-radius: 5px;
+  border: 1px solid #DDD;
+  background: linear-gradient(180deg, #F3F9FE 0%, #FFF 100%);
+}
+
+.check__wrap-yes .check-list__item:first-of-type .check-list__item-img {
+  padding: 0.875rem 0.875rem 0rem 0.875rem;
+}
+.check__wrap-yes .check-list__item:first-of-type .check-list__item-img img {
+  height: 100%;
+  aspect-ratio: 156/106;
+}
+.check__wrap-yes .check-list__item:nth-of-type(2) .check-list__item-img {
+  padding: 0.4375rem 0.875rem 0rem 0.875rem;
+}
+.check__wrap-yes .check-list__item:nth-of-type(2) .check-list__item-img img {
+  aspect-ratio: 156/130;
+  height: 100%;
+}
+
+.check__wrap-no .check-list__item:first-of-type .check-list__item-img {
+  padding: 0.875rem 0.875rem 0rem 0.875rem;
+}
+.check__wrap-no .check-list__item:first-of-type .check-list__item-img img {
+  height: 100%;
+  aspect-ratio: 156/106;
+}
+.check__wrap-no .check-list__item:nth-of-type(2) .check-list__item-img {
+  padding: 0.875rem 0.875rem 0rem 0.875rem;
+}
+.check__wrap-no .check-list__item:nth-of-type(2) .check-list__item-img img {
+  aspect-ratio: 153/104;
+  height: 100%;
+}
+
+.check-list__item-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222;
+}
+@media screen and (max-width: 767px) {
+  .check-list__item-title {
+    text-align: center;
+  }
+}
+
+.check-list__item-wrap {
+  padding-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.485rem;
+}
+@media screen and (max-width: 767px) {
+  .check-list__item-wrap {
+    flex-direction: column;
+  }
+}
+
+.check-list__item-img {
+  width: 11.5rem;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+
+.check-list__item-text {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222;
+}
+
+.check-list__item-btn-wrap {
+  margin-top: 0.625rem;
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 1.25rem) / 2));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .check-list__item-btn-wrap {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.heating__text {
+  padding: 1.875rem 0 1.875rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.heating__img-wrap {
+  margin-top: 2.5rem;
+  padding: 1.25rem 0.75rem;
+  border: 1px solid #DDD;
+  background-color: #fff;
+}
+
+.heating__img {
+  aspect-ratio: 696/368;
+}
+.heating__img img {
+  height: 100%;
+}
+
+.heating__source {
+  margin-top: 0.3125rem;
+  text-align: right;
+  font-size: 0.625rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.heating__source a {
+  text-decoration: underline;
+}
+
+.heating-btn-wrap {
+  max-width: 22.1875rem;
+  margin: 0 auto;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.ecojozu__text {
+  padding: 1.25rem 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.ecojozu__img-wrap {
+  padding: 1.25rem;
+  border: 1px solid #DDD;
+  background-color: #fff;
+}
+
+.ecojozu__img {
+  max-width: 26.25rem;
+  margin: 0 auto;
+}
+.ecojozu__img img {
+  aspect-ratio: 420/272;
+  height: 100%;
+}
+
+.ecojozu__source {
+  margin-top: 0.3125rem;
+  text-align: right;
+  font-size: 0.625rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.ecojozu__source a {
+  text-decoration: underline;
+}
+
+.ecojozu-btn-wrap {
+  margin-top: 1.875rem;
+  max-width: 22.1875rem;
+  margin: 0 auto;
+}/*# sourceMappingURL=choose.css.map */

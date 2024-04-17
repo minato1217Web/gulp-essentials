@@ -1,0 +1,11 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.layout-kyuyu {
+    margin-top: prem(80);
+
+    @include mq(md) {
+        margin-top: prem(40);
+    }
+}

@@ -1,0 +1,43 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.heating__text {
+    padding: prem(30) 0 prem(30) 0;
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222;
+}
+
+.heating__img-wrap {
+    margin-top: prem(40);
+    padding: prem(20) prem(12);
+    border: 1px solid #DDD;
+    background-color: #fff;
+}
+
+.heating__img {
+    aspect-ratio: 696 / 368;
+
+    img {
+        height: 100%;
+    }
+}
+
+.heating__source {
+    margin-top: prem(5);
+    text-align: right;
+    font-size: prem(10);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+.heating-btn-wrap {
+    max-width: prem(355);
+    margin: 0 auto;
+}

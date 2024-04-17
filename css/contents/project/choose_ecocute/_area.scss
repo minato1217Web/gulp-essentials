@@ -1,0 +1,55 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.area {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222;
+}
+
+.area__text {
+    padding: prem(20) 0 prem(40) 0;
+}
+
+.area__wrap {
+    padding: prem(20) 0 prem(40) 0;
+    display: flex;
+    gap: prem(20);
+
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.area__img {
+    max-width: prem(444);
+    padding: prem(20) prem(22);
+    aspect-ratio: 400 / 346;
+    flex-shrink: 0;
+    border: 1px solid #DDDDDD;
+
+    @include mq(md) {
+        margin: 0 auto;
+    }
+    
+
+    img {
+        height: 100%;
+    }
+}
+
+.area-content__text {
+    a {
+        text-decoration: underline;
+    }
+}
+
+.area-content__text + .area-content__text {
+    margin-top: prem(20);
+
+    a {
+        text-decoration: underline;
+    }
+}

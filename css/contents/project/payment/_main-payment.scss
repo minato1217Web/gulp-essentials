@@ -1,0 +1,37 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.main-payment__wrap {
+    font-family: $font-family-base;
+    font-weight: $regular;
+    color: #222;
+}
+
+.main-payment__text.main-payment__text-blue {
+    color: #0374D2;
+    font-size: prem(30);
+    font-weight: 700;
+    line-height: lh(30,43.44);
+
+    @include mq(md) {
+        font-size: prem(20);
+    }
+}
+
+.main-payment__text {
+    margin-top: 1.25rem;
+    font-size: 0.875rem;
+    line-height: 1.44786;
+
+    span {
+        display: inline-block;
+    }
+}
+
+.payment__wrap {
+    margin-top: prem(20);
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+}

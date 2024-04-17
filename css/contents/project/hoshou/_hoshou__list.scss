@@ -1,0 +1,43 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.hoshou__list {
+    margin-top: prem(20);
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - prem(20)) / 2));
+    gap: prem(20);
+    @include mq(md) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hoshou-list__item {
+    padding: prem(23) prem(23) prem(25) prem(30);
+    background-color: #F3F9FE;
+    border-radius: prem(10);
+    display: flex;
+    flex-direction: column;
+    gap: prem(13);
+}
+
+.hoshou-list__item-title {
+    display: flex;
+    gap: prem(18);
+    align-items: center;
+    font-family: $font-family-base;
+    font-weight: $bold;
+}
+
+.double-list__item-img {
+    img {
+        height: auto;
+    }
+}
+
+.hoshou-list__item-text {
+    font-family: $font-family-in;
+    font-weight: $regular;
+    line-height: lh(14,25);
+}
+

@@ -1,0 +1,30 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.double {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222
+}
+
+.double__title {
+    font-size: prem(30);
+    font-weight: $bold;
+    font-family: $font-family-base;
+    color: #222222;
+
+    @include mq(md) {
+        font-size: prem(20);
+    }
+
+    span {
+        color: #0374D2;
+        font-family: $font-family-in;
+    }
+}
+
+.double__text {
+    padding: prem(20) 0;
+}

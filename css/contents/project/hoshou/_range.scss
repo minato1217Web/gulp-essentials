@@ -1,0 +1,14 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.range {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222
+}
+
+.range__content {
+    margin-top: prem(40);
+}

@@ -1,0 +1,112 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+/* クレジットカード
+----------------------------------------------- */
+.payment-card__wrap {
+    margin-top: prem(40);
+    font-family: $font-family-base;
+    font-size: prem(14);
+    font-weight: $regular;
+    color: #222;
+}
+
+.payment-card__text {
+    padding: prem(20) 0;
+}
+
+.payment-card__text span {
+    color: #0374D2;
+    font-weight: $bold;
+}
+
+.payment-card__bottom {
+    margin-top: prem(20);
+    padding: prem(20) prem(51) prem(19) prem(32);
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0374D2;
+
+    @include mq(md) {
+        padding: prem(20);
+    }
+}
+
+.payment-card__bottom-text {
+    font-size: prem(12);
+    color: #000;
+
+    span {
+        font-weight: $bold;
+    }
+}
+
+.payment-card__bottom-text + .payment-card__bottom-text {
+    margin-top: prem(16);
+}
+
+/* リフォームローン
+----------------------------------------------- */
+.payment-loan__wrap {
+    margin-top: prem(40);
+}
+
+.payment-loan__text {
+    font-family: $font-family-base;
+    font-size: prem(14);
+    font-weight: $regular;
+    color: #222;
+    padding: prem(20) 0;
+}
+
+.payment-loan-jaccs__wrap {
+    margin-top: prem(20);
+    padding: prem(20);
+    background-color: #F8EFE0;
+}
+
+.payment-loan-jaccs__title {
+    font-size: prem(16);
+    font-weight: $bold;
+    color: #222;
+
+    span {
+        display: inline-block;
+    }
+}
+
+.payment-loan-jaccs__text {
+    margin-top: prem(10);
+    font-size: prem(14);
+    color: #222;
+}
+
+.payment-loan-jaccs__img {
+    max-width: prem(680);
+    margin-top: prem(20);
+
+    img {
+        height: auto;
+    }
+}
+
+.payment-loan-jaccs__bottom-text {
+    margin-top: prem(20);
+    font-size: prem(14);
+    color: #222;
+}
+
+/* 現金支払
+----------------------------------------------- */ 
+.payment-cash__wrap {
+    margin-top: prem(40);
+}
+
+.payment-cash__text {
+    padding-top: prem(20);
+    font-size: prem(14);
+    color: #222;
+    font-family: $font-family-base;
+    font-weight: $regular;
+}

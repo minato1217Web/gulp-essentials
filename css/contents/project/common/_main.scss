@@ -1,0 +1,18 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.main {
+    max-width: prem(720);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+    #main {
+        flex-direction: column;
+        gap: 0;
+        max-width: 37.5rem;
+        padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+    }
+}

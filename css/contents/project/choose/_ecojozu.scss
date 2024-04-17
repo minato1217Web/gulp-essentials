@@ -1,0 +1,46 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.ecojozu__text {
+    padding: prem(20) 0 prem(40) 0;
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222;
+}
+
+.ecojozu__img-wrap {
+    padding: prem(20);
+    border: 1px solid #DDD;
+    background-color: #fff;
+}
+
+.ecojozu__img {
+    max-width: prem(420);
+    margin: 0 auto;
+
+    img {
+        aspect-ratio: 420 / 272;
+        height: 100%;
+    }
+
+}
+
+.ecojozu__source {
+    margin-top: prem(5);
+    text-align: right;
+    font-size: prem(10);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    
+    a {
+        text-decoration: underline;
+    }
+}
+
+.ecojozu-btn-wrap {
+    margin-top: prem(30);
+    max-width: prem(355);
+    margin: 0 auto;
+}

@@ -1,0 +1,18 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.kyuyu {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222;
+}
+
+.kyuyu__text {
+    padding: prem(20) 0 prem(40) 0;
+
+    &:last-of-type {
+        padding-bottom: 0;
+    }
+}

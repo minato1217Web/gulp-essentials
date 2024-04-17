@@ -1,0 +1,70 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+
+.price-table__wrap {
+    margin-top: prem(20);
+    font-family: $font-family-base;
+    font-size: prem(16);
+    font-weight: $bold;
+}
+.price__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #0374D2;
+
+    @include mq(md) {
+        width: prem(720);
+    }
+}
+
+.price-table__header {
+    background-color: #EDF4FA;
+
+    th {
+        padding: prem(8.5) prem(13.5);
+        text-align: left;
+
+        span {
+            font-family: $font-family-in;
+        }
+    }
+}
+
+.price-table__maker {
+    height: prem(40);
+
+    td {
+        padding: prem(15) prem(5) prem(5) prem(5);
+        text-align: center;
+        border-top: 1px solid #0374D2;
+    }
+
+    td + td {
+        border-left: 1px solid #0374D2;
+    }
+}
+
+.price-table__maker-img {
+    img {
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.price-table__footer {
+    height: prem(40);
+
+    td + td {
+        border-left: 1px solid #0374D2;
+    }
+}
+
+.price-table__footer-text {
+    text-align: center;
+
+    span {
+        font-family: $font-family-in;
+    }
+}

@@ -1,0 +1,60 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.pressure__list {
+    margin-top: prem(20);
+    padding-bottom: prem(40);
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - prem(30)) / 3));
+    gap: prem(10);
+
+    @include mq(md) {
+        grid-template-columns: 1fr;
+        gap: prem(30);
+    }
+}
+
+.pressure-list__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.pressure-list__item-title {
+    font-size: prem(16);
+    font-weight: $bold;
+    color: #0374D2;
+}
+
+.pressure-list__item-img {
+    margin-top: prem(10);
+    aspect-ratio: 233 / 72;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.pressure-list__item-content {
+    margin-top: prem(15);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pressure-list__item-text {
+    margin-bottom: prem(15);
+}
+
+.pressure-list__item-btn-wrap {
+    margin-top: auto;
+}
+
+.pressure__text {
+    span {
+        font-weight: $bold;
+    }
+}
+

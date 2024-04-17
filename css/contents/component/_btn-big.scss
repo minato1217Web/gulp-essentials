@@ -1,0 +1,32 @@
+@import '../foundation/functions';
+@import '../foundation/mixin';
+@import '../foundation/variables';
+
+.btn-big {
+    position: relative;
+    width: prem(440);
+    height: prem(56);
+    font-size: prem(20);
+    font-weight: $bold;
+    font-family:$font-family-base;
+    color: #fff;
+    background-color: #0374D2;
+    border-radius: prem(5);
+    box-shadow: 0px 4px 0px 0px #0062B3;
+    display: grid;
+    place-items: center;
+
+    @include mq(md) {
+        width: prem(300);
+        height: prem(40);
+        font-size: prem(14);
+    }
+
+    img {
+        width: prem(16);
+        height: prem(16);
+        aspect-ratio: 1 / 1;
+        position: absolute;
+        left: prem(12);
+    }
+}

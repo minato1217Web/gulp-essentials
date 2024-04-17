@@ -1,0 +1,88 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.double__list {
+    display: flex;
+    gap: prem(20);
+    position: relative;
+
+    @include mq(md) {
+        flex-direction: column;
+    }
+
+    &::after {
+        content: '';
+        width: prem(63);
+        height: prem(63);
+        background: url(../../images/contents/hoshou/common/plus-icon.png) no-repeat center center/cover;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.double-list__item {
+    width: calc(50% - prem(10));
+    padding: prem(25) prem(28) prem(23) prem(28);
+    border: 2px solid #0374D2;
+    border-radius: prem(10);
+    background-image: linear-gradient(-45deg, #fff 25%, #F3F9FE 25%, #F3F9FE 50%, #fff 50%, #fff 75%, #F3F9FE 75%, #F3F9FE);
+    background-size: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: prem(25);
+
+    @include mq(md) {
+        max-width: prem(350);
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 403px){
+        padding-right: prem(10);
+        padding-left: prem(10);
+    }
+}
+
+.double-list__item-img-wrap {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - prem(14)) / 2));
+    gap: prem(14);
+    align-items: center;
+    flex-grow: 1;
+}
+
+.double-list__item-img {
+    img {
+        height: auto;
+    }
+}
+
+.double-list__item-img.double-list__item-img-right {
+    position: relative;
+}
+
+.double-list__item-img-kyuutouki {
+    width: prem(62);
+    position: absolute;
+    top: 0;
+    left: prem(-10);
+
+    img {
+        height: auto;
+    }
+
+}
+
+.double-list__item-text {
+    font-size: prem(16);
+    font-weight: $bold;
+    font-family: $font-family-in;
+    color: #222;
+
+    span {
+        background: linear-gradient(transparent 50%, #FFD60066 50%);
+    }
+}

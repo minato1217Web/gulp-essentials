@@ -1,0 +1,47 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.tank-list {
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - prem(30)) / 4));
+    gap: prem(10);
+
+    @include mq(md) {
+        grid-template-columns: repeat(2, calc((100% - prem(20)) / 2));
+        gap: prem(20);
+    }
+}
+
+.tank-list__item-title {
+    font-size: prem(16);
+    font-weight: $bold;
+
+    @include mq(md) {
+        text-align: center;
+    }
+
+    span {
+        color: #0374D2;
+    }
+}
+
+.tank-list__item-img {
+    margin-top: prem(9);
+    max-width: prem(172);
+    width: 100%;
+    aspect-ratio: 172 / 130;
+
+    @include mq(md) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    img {
+        height: 100%;
+    }
+}
+
+.tank-list__item-btn-wrap {
+    margin-top: prem(15);
+}

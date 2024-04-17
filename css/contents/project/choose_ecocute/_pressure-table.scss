@@ -1,0 +1,65 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.pressure-table {
+    width: 1019px;
+    border-collapse: collapse;
+    font-size: prem(14);
+    font-weight: $bold;
+}
+
+.pressure-table table ,
+.pressure-table td, 
+.pressure-table th {
+	border: 1px solid #0374D2;
+	border-collapse: collapse;
+}
+
+.pressure-table td,.pressure-table th {
+    width: prem(127);
+}
+
+.pressure-table th {
+    height: prem(47);
+    padding: 0 prem(13.5);
+    text-align: left;
+    color: #fff;
+    background: #0374D2;
+    &:nth-of-type(1) {
+        background: rgba(3, 116, 210, 0.83);
+    }
+}
+
+.pressure-table__center {
+    height: prem(47);
+    background-color: #EDF4FA;
+    color: #0374D2;
+    text-align: center;
+}
+
+.pressure-table__footer {
+    height: prem(100);
+    
+}
+
+.pressure-table__logo-img-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: prem(10);
+}
+
+.pressure-table__logo-img {
+    width: prem(97);
+    margin: 0 auto;
+    aspect-ratio: 97 / 28;
+
+    img {
+        height: 100%;
+    }
+}
+
+.pressure-table__text {
+    font-size: prem(10);
+    text-align: right;
+}

@@ -1,0 +1,116 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.check__list {
+    padding: prem(20) 0;
+    display: flex;
+    flex-direction: column;
+    gap: prem(10);
+}
+
+.check-list__item {
+    padding: prem(20);
+    border-radius: 5px;
+    border: 1px solid #DDD;
+    background: linear-gradient(180deg, #F3F9FE 0%, #FFF 100%);
+}
+
+.check__wrap-yes {
+    .check-list__item {
+        &:first-of-type {
+            .check-list__item-img {
+                padding: prem(14) prem(14) prem(0) prem(14);
+    
+                img {
+                    height: 100%;
+                    aspect-ratio: 156 / 106;
+                }
+            }
+        }
+    
+        &:nth-of-type(2) {
+            .check-list__item-img {
+                padding: prem(7) prem(14) prem(0) prem(14);
+                
+                img {
+                    aspect-ratio: 156 / 130;
+                    height: 100%;
+                }
+            }
+        } 
+    }   
+}
+
+.check__wrap-no {
+    .check-list__item {
+        &:first-of-type {
+            .check-list__item-img {
+                padding: prem(14) prem(14) prem(0) prem(14);
+    
+                img {
+                    height: 100%;
+                    aspect-ratio: 156 / 106;
+                }
+            }
+        }
+    
+        &:nth-of-type(2) {
+            .check-list__item-img {
+                padding: prem(14) prem(14) prem(0) prem(14);
+                
+                img {
+                    aspect-ratio: 153 / 104;
+                    height: 100%;
+                }
+            }
+        } 
+    }   
+}
+
+
+.check-list__item-title {
+    font-size: prem(15);
+    font-weight: $bold;
+    font-family: $font-family-base;
+    color: #222;
+
+    @include mq(md) {
+        text-align: center;
+    }
+}
+
+.check-list__item-wrap {
+    padding-top: prem(24);
+    display: flex;
+    align-items: center;
+    gap: prem(23.76);
+
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.check-list__item-img {
+    width: prem(184);
+    background-color: #fff;
+    flex-shrink: 0;
+}
+
+.check-list__item-text {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222;
+}
+
+.check-list__item-btn-wrap {
+    margin-top: prem(10);
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - prem(20)) / 2));
+    gap: prem(10);
+
+    @include mq(md) {
+        grid-template-columns: 1fr;
+    }
+}

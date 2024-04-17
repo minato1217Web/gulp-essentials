@@ -1,0 +1,112 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.price {
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222
+}
+
+.price__text {
+    padding: prem(20) 0 0 0;
+}
+
+.price__content {
+    margin-top: prem(40);
+}
+
+.price-hoshou__wrap {
+    margin-top: prem(27);
+    padding: prem(25) prem(25) prem(23) prem(28);
+    border: 2px solid #0374D2;
+    border-radius: prem(10);
+    background-image: linear-gradient(-45deg, #fff 25%, #F3F9FE 25%, #F3F9FE 50%, #fff 50%, #fff 75%, #F3F9FE 75%, #F3F9FE);
+    background-size: 40px 40px;
+    display: flex;
+    align-items: center;
+    gap: prem(26);
+    position: relative;
+
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.price-hoshou__arrow-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+        height: auto;
+    }
+}
+
+.price-hoshou__img {
+    display: flex;
+    align-items: center;
+    gap: prem(18);
+
+    img {
+        height: auto;
+    }
+}
+
+.price-hoshou__content {
+    display: flex;
+    align-items: center;
+}
+
+.price-hoshou__text {
+    font-family: $font-family-in;
+    font-size: prem(16);
+    font-weight: $bold;
+
+    span {
+        background: linear-gradient(transparent 50%, #FFD60066 50%);
+    }
+}
+
+.price-lifespan {
+    margin-top: prem(20);
+}
+
+.price-lifespan__wrap {
+    padding: prem(20);
+    background-color: #F8EFE0;
+    display: flex;
+    flex-direction: column;
+    gap: prem(5);
+}
+
+.price-lifespan__title-wrap {
+    display: flex;
+    align-items: center;
+    gap: prem(8);
+}
+.price-lifespan__title {
+    font-family: $font-family-base;
+    font-size: prem(16);
+    font-weight: $bold;
+
+}
+
+.price-lifespan__quote {
+    margin-top: prem(10);
+    font-family: $font-family-base;
+    font-weight: $regular;
+    font-size: prem(12);
+    text-align: right;
+
+    @include mq(md) {
+        margin-top: prem(5);
+        font-size: prem(10);
+    }
+
+    span {
+        display: inline-block;
+    }
+}

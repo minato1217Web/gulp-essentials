@@ -1,0 +1,37 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.question__text {
+    padding: prem(20) 0 prem(40) 0;
+    font-size: prem(14);
+    font-weight: $regular;
+    font-family: $font-family-base;
+    color: #222222;
+}
+
+.question__wrap {
+    padding: prem(20) 0;
+    display: flex;
+    align-items: center;
+    gap: prem(51);
+
+    @include mq(md) {
+        flex-direction: column;
+    }
+}
+
+.question__img {
+    width: prem(257);
+    flex-shrink: 0;
+    aspect-ratio: 257 / 260;
+
+    img {
+        height: 100%;
+    }
+}
+
+.question__content {
+    width: 100%;
+    border: 1px solid #0374D2;
+}

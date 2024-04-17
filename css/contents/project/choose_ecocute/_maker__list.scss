@@ -1,0 +1,40 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.maker__list {
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - prem(20)) / 3));
+    gap: prem(10);
+
+    @include mq(md) {
+        grid-template-columns: repeat(2, calc((100% - prem(10)) / 2));
+    }
+}
+
+.maker-list__item {
+    padding: prem(15) prem(10);
+    background-color: #edf5fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: prem(10);
+}
+
+.maker-list__item-img {
+    max-width: prem(213);
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    height: auto;
+    padding: prem(10);
+    aspect-ratio: 213 / 78;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100%;
+    }
+}

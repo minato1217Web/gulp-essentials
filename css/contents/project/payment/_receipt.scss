@@ -1,0 +1,35 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.receipt__list {
+    margin-top: prem(20);
+    display: flex;
+    flex-direction: column;
+    gap: prem(10);
+    font-size: prem(14);
+}
+
+.receipt-list__item-title {
+    padding: prem(11.5) prem(20);
+    background-color: #0374D2;
+    color: #fff;
+    font-family: $font-family-in;
+    font-weight: $bold;
+
+    @include mq(md) {
+        padding: prem(10);
+    }
+}
+
+.receipt-list__item-content {
+    padding: prem(18.5) prem(20);
+    background-color: #F2F9FF;
+    font-family: $font-family-base;
+    font-weight: $regular;
+    color: #222;
+
+    @include mq(md) {
+        padding: prem(10);
+    }
+}

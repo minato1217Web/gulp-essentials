@@ -1,0 +1,63 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+.installation__list {
+    display: grid;
+    grid-template-columns: repeat(3, calc((100% - prem(20)) / 3));
+    gap: prem(10);
+
+    @include mq(md) {
+        grid-template-columns: 1fr;
+        gap: prem(40);
+    }
+}
+
+.installation-list__item {
+    @include mq(md) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.installation-list__item-title {
+    font-size: prem(16);
+    font-weight: $bold;
+    color: #0374D2;
+
+    @include mq(md) {
+        max-width: prem(233);
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.installation-list__item-img {
+    max-width: prem(233);
+    width: 100%;
+    margin-top: prem(3);
+    aspect-ratio: 233 / 250;
+
+    @include mq(md) {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.installation-list__item-content {
+    flex: 1;
+}
+
+.installation-list__item-text {
+    padding: prem(15) 0;
+    font-size: prem(14);
+    
+    span {
+        font-weight: $bold;;
+    }
+}

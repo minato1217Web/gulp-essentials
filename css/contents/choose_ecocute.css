@@ -1,0 +1,1858 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+@media (max-width: 1040px) {
+  html {
+    font-size: calc(16 / 1040 * 100vw);
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: calc(16 / 375 * 100vw);
+  }
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 400;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+@media screen and (max-width: 767px) {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+/* ある時からbr消去 
+----------------------------------------------- */
+@media screen and (max-width: 399px) {
+  .sm-remove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .md-remove {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .lg-remove {
+    display: none;
+  }
+}
+
+/* ある時からbr追加
+----------------------------------------------- */
+.sm-add {
+  display: none;
+}
+@media screen and (max-width: 399px) {
+  .sm-add {
+    display: block;
+  }
+}
+
+.md-add {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .md-add {
+    display: block;
+  }
+}
+
+.lg-add {
+  display: none;
+}
+@media screen and (max-width: 999px) {
+  .lg-add {
+    display: block;
+  }
+}
+
+.br-add {
+  display: inline-block;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-choose {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-choose {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-step {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-step {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-area {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-area {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-installation {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-installation {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-tank {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-tank {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-kyuyu {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-kyuyu {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-pressure {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-pressure {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-maker {
+  margin-top: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-maker {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.layout-merit {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+@media screen and (max-width: 767px) {
+  .layout-merit {
+    margin-top: 2.5rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.section__title-wrap {
+  width: 100%;
+  background-color: #F2F9FF;
+  padding: 0.9375rem;
+  border-bottom: 2px solid #0374D2;
+  display: flex;
+  gap: 0.75rem;
+}
+@media screen and (max-width: 767px) {
+  .section__title-wrap {
+    gap: 0.5rem;
+  }
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #0374D2;
+}
+@media screen and (max-width: 767px) {
+  .section-title {
+    font-size: 1.125rem;
+  }
+}
+.section-title span {
+  display: inline-block;
+}
+
+.section__title-no {
+  margin-top: 0.1875rem;
+  width: 1.875rem;
+  height: 1.875rem;
+  background-color: #FFA800;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  border-radius: 0.3125rem;
+  flex-shrink: 0;
+  display: inline-grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .section__title-no {
+    width: 1.375rem;
+    height: 1.375rem;
+    font-size: 0.875rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-big {
+  position: relative;
+  width: 27.5rem;
+  height: 3.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  background-color: #0374D2;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 4px 0px 0px #0062B3;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .btn-big {
+    width: 18.75rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+  }
+}
+.btn-big img {
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 0.75rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-small {
+  width: 100%;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  display: grid;
+  place-items: center;
+  padding: 0.625rem 0;
+  background-color: #0374D2;
+  border-radius: 0.125rem;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.btn-small picture {
+  width: 0.5625rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  right: 0.4375rem;
+  transform: translateY(-50%);
+}
+.btn-small picture img {
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .btn-small.btn-small__tank {
+    font-size: 0.75rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-maker {
+  position: relative;
+  width: 100%;
+  height: 2.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #fff;
+  border-radius: 0.3125rem;
+  background: #50abe6;
+  box-shadow: 0 0.3125rem 0 #0478c4;
+  transition: box-shadow ease 0.3s, transform ease 0.3s;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 767px) {
+  .btn-maker {
+    height: 2.5rem;
+    font-size: 0.75rem;
+  }
+}
+.btn-maker:hover {
+  color: #fff;
+  opacity: 1;
+  text-decoration: none;
+  box-shadow: none;
+  transform: translateY(5px);
+  transition: box-shadow ease 0.3s, transform ease 0.3s;
+}
+.btn-maker img {
+  width: 1rem;
+  height: 1rem;
+  aspect-ratio: 1/1;
+  position: absolute;
+  left: 0.75rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.section-title__lv3 {
+  padding-bottom: 0.4375rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+  border-bottom: 2px solid #0374D2;
+}
+.section-title__lv3 span {
+  display: inline-block;
+}
+
+.section-title__lv3.section-title__lv3-blue span {
+  display: inline;
+  color: #0374D2;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.btn-cta {
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #182166;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFC300;
+  border-radius: 0.3125rem;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+@media screen and (max-width: 767px) {
+  .btn-cta {
+    font-size: 1rem;
+    height: 3.75rem;
+  }
+}
+
+.btn-cta:hover {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  top: 2px;
+}
+
+.btn-cta::before {
+  width: 200%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffc300, #ffdc6c 38%, #fff3ce 57%, #ffe07d 74%, #ffc300);
+  z-index: 0;
+  animation: bggradient 2.5s ease infinite;
+  transition: all 0.2s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+.btn-cta::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1.25rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-top: 0.4375rem solid rgba(0, 0, 0, 0);
+  border-bottom: 0.4375rem solid rgba(0, 0, 0, 0);
+  border-left: 0.625rem solid #192166;
+  border-right: 0;
+}
+@media screen and (max-width: 767px) {
+  .btn-cta::after {
+    right: 0.625rem;
+  }
+}
+
+.btn-cta span {
+  font-family: "Inter", "Noto Sans JP", sans-serif;
+  display: inline;
+}
+
+@keyframes bggradient {
+  0% {
+    left: -200%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.container {
+  max-width: 65rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 14.125rem 1.25rem;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 3.75rem;
+}
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 37.5rem;
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.main {
+  max-width: 45rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  #main {
+    flex-direction: column;
+    gap: 0;
+    max-width: 37.5rem;
+    padding: 1.25rem 1.25rem 3.75rem 1.25rem;
+  }
+}
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.sidebar {
+  width: 13.75rem;
+  background-color: #fdfdfd;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.step__title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+@media screen and (max-width: 767px) {
+  .step__title {
+    font-size: 1.25rem;
+  }
+}
+.step__title span {
+  color: #0374D2;
+}
+
+.step__text {
+  margin-top: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+@media screen and (max-width: 767px) {
+  .step__text {
+    font-size: 0.75rem;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.step__list {
+  margin-top: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.25rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .step__list {
+    grid-template-columns: repeat(2, calc((100% - 0.625rem) / 2));
+  }
+}
+
+.step-list__item a {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.step-list__item-icon-wrap {
+  height: 1.75rem;
+  display: block;
+  background-image: linear-gradient(-45deg, #FFB526 25%, #FFA500 25%, #FFA500 50%, #FFB526 50%, #FFB526 75%, #FFA500 75%, #FFA500);
+  background-size: 20px 20px;
+  position: relative;
+}
+
+.step-list__item-icon {
+  width: 0.8125rem;
+  height: 0.8125rem;
+  display: inline-block;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-list__item-icon img {
+  height: 100%;
+}
+
+.step-list__item-text-wrap {
+  padding: 0.75rem 1rem 1.25rem 1.25rem;
+  background-color: #FFF3DB;
+  flex: 1;
+}
+@media screen and (max-width: 767px) {
+  .step-list__item-text-wrap {
+    padding: 0.75rem 0.625rem 0.75rem 1rem;
+  }
+}
+
+.step-list__item-no {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #FFA800;
+  text-transform: uppercase;
+}
+
+.step-list__item-text {
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.step-list__item-text span {
+  display: inline-block;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.subsidy {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.subsidy__text {
+  padding: 1.25rem 0;
+}
+
+.subsidy__btn-wrap {
+  padding: 2.875rem 0;
+  background-color: #F2F9FF;
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .subsidy__btn-wrap {
+    padding: 1.875rem 0;
+  }
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.area {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.area__text {
+  padding: 1.25rem 0 2.5rem 0;
+}
+
+.area__wrap {
+  padding: 1.25rem 0 2.5rem 0;
+  display: flex;
+  gap: 1.25rem;
+}
+@media screen and (max-width: 767px) {
+  .area__wrap {
+    flex-direction: column;
+  }
+}
+
+.area__img {
+  max-width: 27.75rem;
+  padding: 1.25rem 1.375rem;
+  aspect-ratio: 400/346;
+  flex-shrink: 0;
+  border: 1px solid #DDDDDD;
+}
+@media screen and (max-width: 767px) {
+  .area__img {
+    margin: 0 auto;
+  }
+}
+.area__img img {
+  height: 100%;
+}
+
+.area-content__text a {
+  text-decoration: underline;
+}
+
+.area-content__text + .area-content__text {
+  margin-top: 1.25rem;
+}
+.area-content__text + .area-content__text a {
+  text-decoration: underline;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.area__list {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, calc((100% - 1.25rem) / 2));
+  gap: 1.25rem;
+}
+@media screen and (max-width: 767px) {
+  .area__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .area-list__item {
+    max-width: 21.875rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.area-list__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0374D2;
+}
+
+.area-list__item-img {
+  margin-top: 0.3125rem;
+  margin-right: auto;
+  margin-left: auto;
+  aspect-ratio: 350/175;
+}
+.area-list__item-img img {
+  height: 100%;
+}
+
+/* テーブル
+----------------------------------------------- */
+.area-table {
+  margin-top: 1.25rem;
+  border: 1px solid #0374D2;
+}
+
+.area-table__list {
+  display: flex;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media screen and (max-width: 767px) {
+  .area-table__list {
+    font-size: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.area-table__list + .area-table__list {
+  border-top: 1px solid #0374D2;
+}
+
+.area-table__term {
+  width: 24%;
+  padding: 0.84375rem;
+  color: #222222;
+  background: #EDF4FA;
+}
+@media screen and (max-width: 767px) {
+  .area-table__term {
+    width: 100%;
+  }
+}
+
+.area-table__description {
+  padding: 0.84375rem;
+  width: 76%;
+  font-weight: 400;
+  border-left: 1px solid #0374D2;
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .area-table__description {
+    width: 100%;
+    justify-content: center;
+    border-left: none;
+    border-top: 1px solid #0374D2;
+  }
+}
+.area-table__description img {
+  aspect-ratio: 98/28;
+  height: 100%;
+}
+.area-table__description span {
+  color: #0374D2;
+  font-weight: 700;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.installation__text {
+  padding: 1.25rem 0 2.5rem 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.installation__list {
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.25rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .installation__list {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .installation-list__item {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.installation-list__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0374D2;
+}
+@media screen and (max-width: 767px) {
+  .installation-list__item-title {
+    max-width: 14.5625rem;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.installation-list__item-img {
+  max-width: 14.5625rem;
+  width: 100%;
+  margin-top: 0.1875rem;
+  aspect-ratio: 233/250;
+}
+@media screen and (max-width: 767px) {
+  .installation-list__item-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.installation-list__item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.installation-list__item-content {
+  flex: 1;
+}
+
+.installation-list__item-text {
+  padding: 0.9375rem 0;
+  font-size: 0.875rem;
+}
+.installation-list__item-text span {
+  font-weight: 700;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.tank {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.tank__text {
+  padding: 1.25rem 0 2.5rem 0;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.tank-list {
+  display: grid;
+  grid-template-columns: repeat(4, calc((100% - 1.875rem) / 4));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .tank-list {
+    grid-template-columns: repeat(2, calc((100% - 1.25rem) / 2));
+    gap: 1.25rem;
+  }
+}
+
+.tank-list__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .tank-list__item-title {
+    text-align: center;
+  }
+}
+.tank-list__item-title span {
+  color: #0374D2;
+}
+
+.tank-list__item-img {
+  margin-top: 0.5625rem;
+  max-width: 10.75rem;
+  width: 100%;
+  aspect-ratio: 172/130;
+}
+@media screen and (max-width: 767px) {
+  .tank-list__item-img {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.tank-list__item-img img {
+  height: 100%;
+}
+
+.tank-list__item-btn-wrap {
+  margin-top: 0.9375rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.kyuyu {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.kyuyu__text {
+  padding: 1.25rem 0 2.5rem 0;
+}
+.kyuyu__text:last-of-type {
+  padding-bottom: 0;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.kyuyu__list {
+  padding-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.kyuyu-list__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0374D2;
+}
+
+.kyuyu-list__item-text {
+  margin-top: 0.3125rem;
+}
+
+.kyuyu-list__item-img {
+  margin-top: 0.9375rem;
+  aspect-ratio: 720/140;
+}
+.kyuyu-list__item-img img {
+  height: 100%;
+}
+
+.kyuyu-list__item-btn-wrap {
+  width: 14.5625rem;
+  margin-top: 0.9375rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.kyuyu__table-wrap {
+  margin-top: 1.25rem;
+  padding: 1.125rem;
+  background-color: #F2F9FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.kyuyu__table {
+  width: 42.5rem;
+  border: 1px solid #0374D2;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  font-weight: 700;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.kyuyu__table thead tr th:first-of-type {
+  background-color: #fff;
+}
+
+.diagonal-line {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0;
+}
+.diagonal-line span {
+  padding: 0 0.375rem;
+  display: block;
+}
+
+.diagonal-line::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom left, rgba(0, 0, 0, 0) calc(50% - 1px), #0374D2 50%, rgba(0, 0, 0, 0) calc(50% + 1px));
+  pointer-events: none;
+}
+
+.col-header {
+  grid-column-start: 2;
+  text-align: right;
+}
+
+.row-header {
+  grid-column-start: 1;
+  text-align: left;
+}
+
+.kyuyu__table tr {
+  height: 2.9375rem;
+}
+
+.kyuyu__table th {
+  width: 10.625rem;
+  color: #0374D2;
+  background-color: #F8EFE0;
+  border-left: 1px solid #0374D2;
+  border-top: 1px solid #0374D2;
+}
+
+.kyuyu__table td {
+  width: 10.625rem;
+  background-color: #fff;
+  border-left: 1px solid #0374D2;
+  border-top: 1px solid #0374D2;
+}
+
+.kyuyu__table td picture {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.pressure {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.pressure__text {
+  padding: 1.25rem 0 0 0;
+}
+
+.pressure-table-wrap {
+  margin-top: 1.25rem;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.pressure__list {
+  margin-top: 1.25rem;
+  padding-bottom: 2.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.875rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .pressure__list {
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+  }
+}
+
+.pressure-list__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.pressure-list__item-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #0374D2;
+}
+
+.pressure-list__item-img {
+  margin-top: 0.625rem;
+  aspect-ratio: 233/72;
+  width: 100%;
+}
+.pressure-list__item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.pressure-list__item-content {
+  margin-top: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.pressure-list__item-text {
+  margin-bottom: 0.9375rem;
+}
+
+.pressure-list__item-btn-wrap {
+  margin-top: auto;
+}
+
+.pressure__text span {
+  font-weight: 700;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.pressure-table {
+  width: 1019px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.pressure-table table,
+.pressure-table td,
+.pressure-table th {
+  border: 1px solid #0374D2;
+  border-collapse: collapse;
+}
+
+.pressure-table td, .pressure-table th {
+  width: 7.9375rem;
+}
+
+.pressure-table th {
+  height: 2.9375rem;
+  padding: 0 0.84375rem;
+  text-align: left;
+  color: #fff;
+  background: #0374D2;
+}
+.pressure-table th:nth-of-type(1) {
+  background: rgba(3, 116, 210, 0.83);
+}
+
+.pressure-table__center {
+  height: 2.9375rem;
+  background-color: #EDF4FA;
+  color: #0374D2;
+  text-align: center;
+}
+
+.pressure-table__footer {
+  height: 6.25rem;
+}
+
+.pressure-table__logo-img-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.pressure-table__logo-img {
+  width: 6.0625rem;
+  margin: 0 auto;
+  aspect-ratio: 97/28;
+}
+.pressure-table__logo-img img {
+  height: 100%;
+}
+
+.pressure-table__text {
+  font-size: 0.625rem;
+  text-align: right;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.maker {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.maker__text {
+  padding: 1.25rem 0 2.5rem 0;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.maker__list {
+  display: grid;
+  grid-template-columns: repeat(3, calc((100% - 1.25rem) / 3));
+  gap: 0.625rem;
+}
+@media screen and (max-width: 767px) {
+  .maker__list {
+    grid-template-columns: repeat(2, calc((100% - 0.625rem) / 2));
+  }
+}
+
+.maker-list__item {
+  padding: 0.9375rem 0.625rem;
+  background-color: #edf5fd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.625rem;
+}
+
+.maker-list__item-img {
+  max-width: 13.3125rem;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: auto;
+  padding: 0.625rem;
+  aspect-ratio: 213/78;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maker-list__item-img img {
+  height: 100%;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.maker-table-wrap {
+  margin-top: 1.25rem;
+}
+
+.maker-table {
+  width: 62.5rem;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #222;
+  border: 1px solid #0374D2;
+  border-collapse: collapse;
+}
+.maker-table .line {
+  color: #ddd;
+}
+
+.maker-table tr {
+  height: 2.9375rem;
+}
+
+.maker-table th,
+.maker-table td {
+  width: 7.5rem;
+  border-left: 1px solid #0374D2;
+  border-top: 1px solid #0374D2;
+  text-align: center;
+}
+
+.maker-table__header th {
+  padding-left: 0.84375rem;
+  background-color: #0374D2;
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+
+.maker-table__sub-header th {
+  font-weight: 700;
+  color: #0374D2;
+  background-color: #fff;
+}
+
+.pressure-table__content th {
+  padding-left: 0.84375rem;
+  background-color: #EDF4FA;
+  color: #0374D2;
+  text-align: left;
+}
+
+.bg-primary {
+  background: rgba(255, 168, 0, 0.1215686275);
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.merit {
+  font-size: 0.875rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: #222222;
+}
+
+.merit__text {
+  padding: 1.25rem 0 2.5rem 0;
+}
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+/*****************************************
+ * px→remの計算
+******************************************/
+/*****************************************
+ * vwの計算
+******************************************/
+/*****************************************
+ * line-heightの計算
+******************************************/
+.merit__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.merit-list__item {
+  padding: 1.25rem 2.5rem 1.25rem 1.25rem;
+  background: linear-gradient(180deg, #F3F9FE 0%, #FFFFFF 100%);
+  border: 1px solid #DDDDDD;
+  border-radius: 0.3125rem;
+}
+.merit-list__item:last-of-type {
+  padding-right: 0.8125rem;
+}
+@media screen and (max-width: 767px) {
+  .merit-list__item {
+    padding: 1.25rem;
+  }
+}
+
+.merit-list__item-title {
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: #222;
+}
+.merit-list__item-title span {
+  margin-right: 0.625rem;
+  width: 5rem;
+  height: 1.3125rem;
+  background-color: #FFA800;
+  color: #fff;
+  border-radius: 0.125rem;
+  display: inline-grid;
+  place-items: center;
+}
+
+.merit-list__item-wrap {
+  margin-top: 1.25rem;
+  display: flex;
+  gap: 1.875rem;
+}
+@media screen and (max-width: 767px) {
+  .merit-list__item-wrap {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+}
+
+.merit-list__item-img {
+  max-width: 20.625rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0.75rem 0.4375rem 0.4375rem 0.75rem;
+  aspect-ratio: 330/168;
+  background-color: #fff;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 767px) {
+  .merit-list__item-img {
+    padding: 0.4375rem;
+  }
+}
+.merit-list__item-img:nth-of-type(1) {
+  aspect-ratio: 330/168;
+}
+.merit-list__item-img picture {
+  height: 100%;
+}
+.merit-list__item-img img {
+  height: 100%;
+}
+
+.merit-list__item:last-of-type .merit-list__item-img {
+  padding: 0.1875rem 0.3125rem 0 0.375rem;
+  aspect-ratio: 330/202;
+}/*# sourceMappingURL=choose_ecocute.css.map */

@@ -1,0 +1,52 @@
+@import '../foundation/functions';
+@import '../foundation/mixin';
+@import '../foundation/variables';
+
+.section__title-wrap {
+    width: 100%;
+    background-color: #F2F9FF;
+    padding: prem(15);
+    border-bottom: 2px solid #0374D2;
+    display: flex;
+    gap: prem(12);
+
+    @include mq(md) {
+        gap: prem(8);
+    }
+}
+
+.section-title {
+    font-size: prem(24);
+    font-weight: $bold;
+    font-family: $font-family-base;
+    color: #0374D2;
+
+    @include mq(md) {
+        font-size: prem(18);
+    }
+
+    span {
+        display: inline-block;
+    }
+}
+
+.section__title-no {
+    margin-top: prem(3);
+    width: prem(30);
+    height: prem(30);
+    background-color: #FFA800;
+    font-size: prem(17);
+    font-weight: $bold;
+    font-family: $font-family-ro;
+    color: #fff;
+    border-radius: prem(5);
+    flex-shrink: 0;
+    display: inline-grid;
+    place-items: center;
+
+    @include mq(md) {
+        width: prem(22);
+        height: prem(22);
+        font-size: prem(14);
+    }
+}

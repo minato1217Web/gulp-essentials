@@ -1,0 +1,21 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.container {
+    max-width: prem(1040);
+    width: 100%;
+    margin: 0 auto;
+    padding: prem(32) prem(20) prem(226) prem(20);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: prem(60);
+
+    @include mq(md) {
+        max-width: prem(600);
+        padding: prem(20) prem(20) prem(60) prem(20);
+        flex-direction: column;
+        gap: 0;
+    }
+}

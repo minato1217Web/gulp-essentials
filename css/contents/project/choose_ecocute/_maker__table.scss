@@ -1,0 +1,58 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.maker-table-wrap {
+    margin-top: prem(20);
+}
+
+.maker-table {
+    width: prem(1000);
+    font-size: prem(14);
+    font-weight: $regular;
+    color: #222;
+    border: 1px solid #0374D2;
+    border-collapse: collapse;
+
+    .line {
+        color: #ddd;
+    }
+}
+.maker-table tr {
+    height: prem(47);
+}
+
+.maker-table th , 
+.maker-table td {
+    width: prem(120);
+    border-left: 1px solid #0374D2;
+    border-top: 1px solid #0374D2;
+    text-align: center;
+}
+
+.maker-table__header th {
+    padding-left: prem(13.5);
+    background-color: #0374D2;
+    color: #fff;
+    font-weight: $bold;
+    text-align: left;
+}
+
+.maker-table__sub-header th {
+    font-weight: $bold;
+    color: #0374D2;
+    background-color: #fff;
+}
+
+.pressure-table__content {
+    th {
+        padding-left: prem(13.5);
+        background-color: #EDF4FA;
+        color: #0374D2;
+        text-align: left;
+    }
+}
+
+.bg-primary {
+    background: #FFA8001F;
+}

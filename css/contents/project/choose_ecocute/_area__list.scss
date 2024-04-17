@@ -1,0 +1,105 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.area__list {
+    margin-top: prem(20);
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - prem(20)) / 2));
+    gap: prem(20);
+
+    @include mq(md) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.area-list__item {
+    @include mq(md) {
+        max-width: prem(350);
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.area-list__item-title {
+    font-size: prem(16);
+    font-weight: $bold;
+    color: #0374D2;
+}
+
+.area-list__item-img {
+    margin-top: prem(5);
+    margin-right: auto;
+    margin-left: auto;
+    aspect-ratio:  350 / 175;
+
+    img {
+        height: 100%;
+    }
+}
+
+/* テーブル
+----------------------------------------------- */
+
+.area-table {
+    margin-top: prem(20);
+    border: 1px solid #0374D2;
+}
+
+.area-table__list {
+    display: flex;
+    font-size: prem(14);
+    font-weight: $bold;
+    font-family: $font-family-base;
+
+    @include mq(md){
+        font-size: prem(12);
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.area-table__list + .area-table__list {
+    border-top: 1px solid #0374D2;
+}
+
+.area-table__term {
+    width: 24%;
+    padding: prem(13.5);
+    color: #222222;
+    background: #EDF4FA;
+
+    @include mq(md) {
+        width: 100%;
+    }
+}
+
+.area-table__description {
+    padding: prem(13.5);
+    width: 76%;
+    font-weight: $regular;
+    border-left: 1px solid #0374D2;
+    display: flex;
+    align-items: center;
+    gap: prem(10);
+
+    @include mq(md) {
+        width: 100%;
+        justify-content: center;
+        border-left: none;
+        border-top: 1px solid #0374D2;
+    }
+
+    img {
+        aspect-ratio: 98 / 28;
+        height: 100%;
+    }
+
+
+    span {
+        color: #0374D2;
+        font-weight: $bold;
+    }
+}
+
+

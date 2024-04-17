@@ -1,0 +1,32 @@
+@import 'variables';
+
+/*****************************************
+ * 数値から単位を取り除く
+******************************************/
+@function strip-unit($number) {
+    @if type-of($number) == "number" and not unitless($number) {
+        @return $number / ($number * 0 + 1);
+    }
+    @return $number;
+}
+
+/*****************************************
+ * px→remの計算
+******************************************/
+@function prem($pixels) {
+    @return ($pixels / strip-unit($base-font-size)) * 1rem;
+}
+
+/*****************************************
+ * vwの計算
+******************************************/
+@function vw($screen-size, $pixels) {
+    @return calc(#{$pixels} / #{$screen-size} * 100vw);
+}
+
+/*****************************************
+ * line-heightの計算
+******************************************/
+@function lh($size, $line-height) {
+    @return $line-height / $size;
+}

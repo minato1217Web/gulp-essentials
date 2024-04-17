@@ -1,0 +1,34 @@
+@import '../../foundation/functions';
+@import '../../foundation/mixin';
+@import '../../foundation/variables';
+
+.kyuyu__list {
+    padding-bottom: prem(40);
+    display: flex;
+    flex-direction: column;
+    gap: prem(40);
+}
+
+.kyuyu-list__item-title {
+    font-size: prem(16);
+    font-weight: $bold;
+    color: #0374D2;
+}
+.kyuyu-list__item-text {
+    margin-top: prem(5);
+}
+.kyuyu-list__item-img {
+    margin-top: prem(15);
+    aspect-ratio: 720 / 140;
+
+    img {
+        height: 100%;
+    }
+}
+.kyuyu-list__item-btn-wrap {
+    width: prem(233);
+    margin-top: prem(15);
+    margin-right: auto;
+    margin-left: auto;
+}
+
